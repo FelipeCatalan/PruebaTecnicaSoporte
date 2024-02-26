@@ -9,9 +9,11 @@
 
 </head>
 
-<body class="invisible">
+<body class="">
     <h1>Nombre: {{ $aplicante['nombre'] }}</h1>
-    @if ($aplicante->aprobado)
+    <h1>Nivel: {{ $aplicante['nivel'] }}</h1>
+    <h1>Puntos: {{ $aplicante['puntos'] }}</h1>
+    @if ($aplicante['aprobado'])
         <h2>APROBADO</h1>
         @else
             <h2>REPROBADO</h1>
